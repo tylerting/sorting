@@ -125,14 +125,6 @@ def merge_sorted(xs, cmp=cmp_standard):
     You should return a sorted version of the input list xs.
     You should not modify the input list xs in any way.
     '''
-    if len(xs) <= 1:
-        return xs
-    else:
-        mid = len(xs) // 2
-        left = xs[:mid]
-        right = xs[mid:]
-        return _merged(merge_sorted(left), merge_sorted(right))
-
     if len(xs) == 0:
         return xs
     if len(xs) == 1:
