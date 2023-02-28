@@ -1,7 +1,7 @@
 
 # Sorting
-[![](https://github.com/mikeizbicki/sorting/workflows/tests/badge.svg)](https://github.com/mikeizbicki/sorting/actions?query=workflow%3Atests)
-[![](https://github.com/mikeizbicki/sorting/workflows/extra_credit/badge.svg)](https://github.com/mikeizbicki/sorting/actions?query=workflow%3Atests)
+[![](https://github.com/tylerting/sorting/workflows/tests/badge.svg)](https://github.com/tylerting/sorting/actions?query=workflow%3Atests)
+[![](https://github.com/tylerting/sorting/workflows/extra_credit/badge.svg)](https://github.com/tylerting/sorting/actions?query=workflow%3Atests)
 
 You will implement the merge and quick sort algorithms.
 
