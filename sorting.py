@@ -164,13 +164,14 @@ def quick_sorted(xs, cmp=cmp_standard):
     '''
     if len(xs) <= 1:
         return xs
-    mid = len(xs) // 2
-    pivot = xs[mid]
-    xs_smaller = [x for x in xs if x < pivot]
-    xs_bigger = [x for x in xs if x > pivot]
-    xs_equals = [x for x in xs if cmp(x, pivot) == 0]
-    xs_smaller = quick_sorted(xs_smaller, cmp)
-    xs_bigger = quick_sorted(xs_bigger, cmp)
+    else
+        mid = len(xs) // 2
+        pivot = xs[mid]
+        xs_smaller = [x for x in xs if x < pivot]
+        xs_bigger = [x for x in xs if x > pivot]
+        xs_equals = [x for x in xs if cmp(x, pivot) == 0]
+        xs_smaller = quick_sorted(xs_smaller, cmp)
+        xs_bigger = quick_sorted(xs_bigger, cmp)
     return xs_smaller + xs_equals + xs_bigger
 
 
