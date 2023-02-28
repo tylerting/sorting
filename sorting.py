@@ -176,7 +176,10 @@ def quick_sorted(xs, cmp=cmp_standard):
     pivot = xs[mid]
     xs_smaller = [x for x in xs if x < pivot]
     xs_bigger = [x for x in xs if x > pivot]
-    return _merged(quick_sorted(xs_smaller, cmp), quick_sorted(xs_bigger, cmp))
+    xs_equals = [x for x in xs if cmp(x, pivot) == 0]
+    xs_smaller = quick_sorted(xs_smaller, cmp)
+    xs_bigger = quick_sorted(xs_bigger, cmp)
+    return xs_smaller + xs_equals + xs_bigger
 
 
 def quick_sort(xs, cmp=cmp_standard):
